@@ -9,6 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    text-decoration: none;
 }
 
 img {
@@ -41,6 +42,7 @@ img {
     justify-content: center;
     gap: 10px;
     color: rgb(255, 255, 255);
+    min-width: 270px;
 }
 
 h1 {
@@ -65,19 +67,54 @@ label {
 }
 
 input {
-    width: 100%;
+    width: calc(100% - 20px);
     height: 1.75rem;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
 }
 
 .login__rememberDiv {
     width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     position: relative;
+}
+
+.login__rememberDiv > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.login__rememberDiv--input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.login__rememberDiv--input > label {
+    position: initial;
+    margin: 0;
+}
+
+.login__rememberdiv--input > input {
+    margin: 0;
+    width: 10px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 0;
+    color: #f12091;
+    font-weight: 700;
+    font-size: 1rem;
 }
